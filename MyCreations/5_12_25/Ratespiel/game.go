@@ -23,7 +23,7 @@ func RichtigeZahl(a int, r int) bool {
 }
 func ReadNumber() int {
 	var n int
-	fmt.Print("Rate eine Zahl zwischen 1 und 10: ")
+	fmt.Print("Rate eine Zahl zwischen 0 und 9: ")
 	fmt.Scan(&n)
 	return n
 }
