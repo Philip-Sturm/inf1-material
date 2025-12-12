@@ -8,6 +8,13 @@ func Factorial(n int) int {
 	return Result
 }
 
+func CursedFactorial(n int) int {
+	if n == 0 {
+		return 1
+	}
+	return n * CursedFactorial(n-1)
+}
+
 //func main() {
 //	var Input int
 //	fmt.Print("Wähle die Zahl des Factorials: ")
