@@ -8,6 +8,13 @@ ZUSATZBEDINGUNG: Die Funktion muss rekursiv sein.
 
 // CountOdd erwartet eine Liste von Zahlen und liefert die Anzahl der ungeraden Zahlen darin.
 func CountOdd(list []int) int {
-	//TODO
-	return 0
+
+	if len(list) == 0 {
+		return 0
+	}
+	result := 0
+	if list[0]%2 != 0 {
+		result++
+	}
+	return CountOdd(list[1:]) + result
 }
